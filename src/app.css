@@ -8,6 +8,8 @@
   --brown: #a67458;
   --aqua: #c4eef2;
   --white: #f7f8fa;
+  --pink: #db7f8e;
+  --lgtPink: #ffdbda;
   --font-size: 1.3rem;
   --mono: "Oxygen mono", monospace;
   --sans: Oxygen, sans-serif;
@@ -101,7 +103,7 @@ img {
 #intro .name span {
   font-family: var(--sans);
   font-size: 4rem;
-  color: var(--lgtsea);
+  color: var(--pink);
   display: block;
 }
 

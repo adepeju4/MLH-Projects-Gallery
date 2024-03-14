@@ -15,10 +15,10 @@
     }
 
     onMount(() => {
-        const interval = setInterval(nextProject, 3000); // Change slide every 3 seconds
+        const interval = setInterval(nextProject, 4000); 
 
         return () => {
-            clearInterval(interval); // Clear the interval when the component is unmounted
+            clearInterval(interval); 
         };
     });
 </script>
@@ -73,8 +73,8 @@
         {/if}
       {/each}
 
-      <button on:click={prevProject}>Previous</button>
-      <button on:click={nextProject}>Next</button>
+      <button class="button" on:click={prevProject}>Previous</button>
+      <button class="button" on:click={nextProject}>Next</button>
     </div>
   </section>
 </div>
@@ -89,4 +89,11 @@
     height: 100%;
     object-fit: cover;
   }
+
+  button{
+    border: none;
+    cursor: pointer;
+  }
+
+
 </style>
